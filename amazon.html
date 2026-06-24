@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">amazon</div>
+
+        <div class="location">
+            <span>Deliver to</span>
+            <b>India</b>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search Amazon">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <div class="nav-item">
+            <span>Hello, Sign in</span>
+            <b>Account & Lists</b>
+        </div>
+
+        <div class="nav-item">
+            <span>Returns</span>
+            <b>& Orders</b>
+        </div>
+
+        <div class="cart" onclick="toggleCart()">
+            🛒 Cart <span id="cartCount">0</span>
+        </div>
+    </div>
+
+    <div class="menu">
+        <span>☰ All</span>
+        <span>Today's Deals</span>
+        <span>Best Sellers</span>
+        <span>Mobiles</span>
+        <span>Electronics</span>
+        <span>Fashion</span>
+        <span>Books</span>
+        <span>Customer Service</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Amazon Clone</h1>
+    <p>Shop Electronics, Fashion, Home & More</p>
+</section>
+
+<section class="categories">
+    <div class="category">📱 Mobiles</div>
+    <div class="category">💻 Laptops</div>
+    <div class="category">👕 Fashion</div>
+    <div class="category">⌚ Watches</div>
+    <div class="category">📷 Cameras</div>
+    <div class="category">🎮 Gaming</div>
+</section>
+
+<section class="offers">
+    <h2>Today's Deals</h2>
+    <div class="offer-cards">
+        <div class="offer">Up to 70% Off Electronics</div>
+        <div class="offer">Fashion Sale 50% Off</div>
+        <div class="offer">Smart Watches Starting ₹999</div>
+    </div>
+</section>
+
+<main>
+    <h2>Featured Products</h2>
+    <div class="products" id="productContainer"></div>
+</main>
+
+<aside class="cart-panel" id="cartPanel">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+
+    <button class="checkout" onclick="checkout()">
+        Proceed to Checkout
+    </button>
+</aside>
+
+<footer>
+    <h3>Amazon Clone</h3>
+    <p>© 2026 Amazon Clone Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
